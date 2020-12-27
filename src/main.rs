@@ -1,6 +1,5 @@
 use nannou::color::*;
 use nannou::prelude::*;
-use nannou::geom::rect::Rect;
 fn main() {
     nannou::app(model).update(update).simple_window(view).run();
     println!("Hello, world!");
@@ -25,7 +24,6 @@ fn view(app: &App, _model: &Model, frame: Frame) {
         .color(WHITE)
         .w_h(70.0,60.0)
         .x_y(x,y);
-    //    let sheet:Rect = Rect::from_x_y_w_h(x,y,15.0,45.0);
     let sheet_y = y -25.0;
     draw.rect()
         .w_h(70.0,45.0)
